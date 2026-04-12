@@ -173,7 +173,7 @@ export default function MapScreen() {
           <View style={styles.logoRow}>
             <Image 
               source={require('../../assets/logo.png')} 
-              style={{ width: 20, height: 20, resizeMode: 'contain' }} 
+              style={{ width: 28, height: 28, resizeMode: 'contain' }} 
             />
             <Text style={styles.logoLabel}>Cobble</Text>
           </View>

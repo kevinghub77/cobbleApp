@@ -46,7 +46,7 @@ export default function LandingScreen() {
             <View style={styles.logoIcon}>
               <Image 
                 source={require('../assets/logo.png')} 
-                style={{ width: 80, height: 80, resizeMode: 'contain' }} 
+                style={{ width: 130, height: 130, resizeMode: 'contain' }} 
               />
             </View>
             <Text style={styles.logoText}>Cobble</Text>
@@ -134,8 +134,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   logoIcon: {
-    width: 80,
-    height: 80,
+    width: 130,
+    height: 130,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 16,

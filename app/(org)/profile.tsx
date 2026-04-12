@@ -27,6 +27,9 @@ export default function OrgProfileScreen() {
 
   const handleLogout = () => {
     setUserRole(null);
+    if (router.canDismiss()) {
+      router.dismissAll();
+    }
     router.replace('/');
   };
 

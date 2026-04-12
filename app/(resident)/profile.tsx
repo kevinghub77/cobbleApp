@@ -29,6 +29,9 @@ export default function ProfileScreen() {
 
   const handleLogout = () => {
     setUserRole(null);
+    if (router.canDismiss()) {
+      router.dismissAll();
+    }
     router.replace('/');
   };
 
