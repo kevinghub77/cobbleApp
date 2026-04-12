@@ -44,7 +44,10 @@ export default function LandingScreen() {
           {/* Logo area */}
           <View style={styles.logoArea}>
             <View style={styles.logoIcon}>
-              <Text style={styles.logoEmoji}>🪨</Text>
+              <Image 
+                source={require('../assets/logo.png')} 
+                style={{ width: 80, height: 80, resizeMode: 'contain' }} 
+              />
             </View>
             <Text style={styles.logoText}>Cobble</Text>
             <Text style={styles.tagline}>
@@ -133,13 +136,9 @@ const styles = StyleSheet.create({
   logoIcon: {
     width: 80,
     height: 80,
-    borderRadius: 24,
-    backgroundColor: 'rgba(255,255,255,0.15)',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 16,
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)',
   },
   logoEmoji: {
     fontSize: 40,

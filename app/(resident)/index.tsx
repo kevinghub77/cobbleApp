@@ -171,7 +171,10 @@ export default function MapScreen() {
       <SafeAreaView style={styles.headerSafe} edges={['top']}>
         <View style={styles.header}>
           <View style={styles.logoRow}>
-            <Text style={styles.logoEmoji}>🪨</Text>
+            <Image 
+              source={require('../../assets/logo.png')} 
+              style={{ width: 20, height: 20, resizeMode: 'contain' }} 
+            />
             <Text style={styles.logoLabel}>Cobble</Text>
           </View>
           <TextInput
